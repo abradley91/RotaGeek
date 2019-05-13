@@ -1,0 +1,29 @@
+<h1>Contact Messages</h1>
+
+<p>This shows the contact messages that have been created using the Contact Us form.</p>
+
+<p *ngIf="!messages"><em>Loading...</em></p>
+
+<table class='table' *ngIf="messages">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Date</th>
+      <th>Message</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let message of messages">
+      <td>{{ message.id }}</td>
+      <td>{{ message.name }}</td>
+      <td>{{ message.email }}</td>
+      <td>{{ message.date | date:'medium'}}</td>
+      <td>{{ message.message }}</td>
+      <td>
+        <button type="button" class="btn btn-sm btn-danger" (click)="deleteMessage(message)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

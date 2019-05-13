@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28809.33
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RotaGeek", "RotaGeek\RotaGeek.csproj", "{B0689194-1819-4957-8F48-79F34C244BEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RotaGeek.Tests", "RotaGeek.Tests\RotaGeek.Tests.csproj", "{150E7A0E-78C7-4032-B501-95C313D9B795}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0689194-1819-4957-8F48-79F34C244BEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0689194-1819-4957-8F48-79F34C244BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0689194-1819-4957-8F48-79F34C244BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0689194-1819-4957-8F48-79F34C244BEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{150E7A0E-78C7-4032-B501-95C313D9B795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{150E7A0E-78C7-4032-B501-95C313D9B795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{150E7A0E-78C7-4032-B501-95C313D9B795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{150E7A0E-78C7-4032-B501-95C313D9B795}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC1648D0-C37E-47A5-A980-EF828EEF8705}
+	EndGlobalSection
+EndGlobal
