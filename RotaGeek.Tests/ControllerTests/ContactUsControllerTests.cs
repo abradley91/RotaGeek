@@ -72,6 +72,19 @@ namespace RotaGeek.Tests.ControllerTests
         }
 
         [Test]
+        public void Save_ShouldReturnBadRequest_IfStateIsNotValid()
+        {
+            ContactMessage message = new ContactMessage();
+
+            _controller.ModelState.AddModelError("Test", "TestError");
+            var result = _controller.Save(message).Result;
+
+            Assert.AreEqual(typeof(BadRequestObjectResult), result.GetType());
+            _contactMessageRepo.Verify(x => x.AddAsync(message), Times.Never);
+            _contactMessageRepo.Verify(x => x.SaveAsync(), Times.Never);
+        }
+
+        [Test]
         public void Delete_DeletesMessageAndReturnsContactMessage_IfExistsInDb()
         {
             ContactMessage message = new ContactMessage();
